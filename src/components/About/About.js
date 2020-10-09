@@ -1,7 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import Title from '../Title/Title';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Grid } from '@material-ui/core';
 import "./about.scss";
 import Profile from "../../assets/profile.jpg";
 
@@ -24,21 +24,28 @@ const About = () => {
       <section id="about">
         <Container>
           <Title title="About Me" />
-          <Row className="about-wrapper">
-            <Col md={6} sm={12}>
+          
+          <Grid container direction="row">
+            <Grid xs={12} sm={6} style={{ height: "100%" }}>
               <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="flex-center">
-                <img src={Profile} alt="Profile Picture" />
+              <div className="about-wrapper__image">
+                <img src={Profile} alt="Profile Picture" width="50%" height="50%" />
               </div>
               </Fade>
-            </Col>
-            <Col md={6} sm={12}>
+            </Grid>
+            <Grid xs={12} sm={6}>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <div className="about-wrapper__info">
                   <p className="about-wrapper__info-text">
-                  I am very organized, responsible, detail oriented and great at communicating with others and working as part of a team. I am proficient in Illustrator, Photoshop and Microsoft office Suite. I enjoy creating an organized environment and creating ways to increase efficiency and productivity in the workplace. I will always go one step further to ensure all necessary steps are followed accurately and tasks are completed on time with as few setbacks as possible.
+                  I am a full stack software engineer with a background in Digital Media and Graphic Design.    
                   </p>
-                
+                  <p className="about-wrapper__info-text">
+                  I am proficient in Illustrator, Photoshop and Microsoft office Suite. I enjoy creating an organized environment and creating ways to increase efficiency and productivity in the workplace. 
+                  </p>
+                  <p className="about-wrapper__info-text">
+                  I will always go one step further to ensure all necessary steps are followed accurately and tasks are completed on time with as few setbacks as possible.
+                  </p>
+                    <br />
                     <span className="d-flex mt-3">
                       <a
                         target="_blank"
@@ -52,8 +59,9 @@ const About = () => {
                   
                 </div>
               </Fade>
-            </Col>
-          </Row>
+            </Grid>
+            </Grid>
+          
         </Container>
       </section>
     );
