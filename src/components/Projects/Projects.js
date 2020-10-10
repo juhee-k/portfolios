@@ -4,6 +4,9 @@ import Title from '../Title/Title';
 // import Fade from 'react-reveal/Fade';
 
 import Masonry from "react-masonry-css";
+import ProjectBox from "./ui-components/projectBox/projectBox";
+
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 import project1 from "../../assets/project001.png";
 import project2 from "../../assets/project002.png";
@@ -56,105 +59,70 @@ class Portfolio extends React.Component {
           title: "CDS Brochure",
           tag: "Brochure",
         }
-      ]
+      ],
+      filterResult: null,
+      pickedFilter: "all",
+      filterMenuActive: false
     };
   };
-  render () {
+  componentDidMount() {
+    this.filterGallery("all");
+  }
+
+  //FILTER PORTFOLIO FUNCTION
+  filterGallery = (target) => {
+    let projectsArr = [...this.state.projects];
+    let result;
+
+    if (target !== "all") {
+      result = projectsArr.filter((project) => project.tag === target);
+    } else {
+      result = projectsArr;
+    }
+
+    this.setState({ filterResult: result, pickedFilter: target });
+  };
+
+  // FILTER DROP DOWN HOVER MENU FUNCTION
+  filterMenuHover = (event) => {
+    if(event) {
+      this.setState({ filterMenuActive: true });
+    }else {
+      this.setState({ filterMenuActive: false });
+    }
+  }
+
+  // RENDER
+  render() {
+    // PORTFOLIO GALLERY RENDER
     let projectsRender = null;
+    if (this.state.filterResult) {
+      projectsRender = this.state.filterResult.map((project) => (
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} />
+      ));
+    }
+    // PORTFOLIO GALLERY BREAKPOINTS
     const portfolioBreakpoints = {
       default: 3,
       1100: 3,
       700: 2,
       500: 1,
     };
+
+
     return (
       <div id="portfolio">
-      <div className="wrapper">
-        <Title title="Portfolio" />
-        <Masonry breakpointCols={portfolioBreakpoints} className="my-masonry-grid" columnClassName="mint__gallery">
+        <div className="wrapper">
+          <Title title="Portfolio" />
+          <Masonry breakpointCols={portfolioBreakpoints} className="my-masonry-grid" columnClassName="mint__gallery">
             {projectsRender}
-        </Masonry>
+          </Masonry>
+        </div>
       </div>
-      </div>
-
-    ) 
+    );
   }
-};
+
+
+}
 
 export default Portfolio;
-
-
-
-
-
-
-// const Portfolio = () => {
-
-//     const [isDesktop, setIsDesktop] = useState(false);
-//     const [isMobile, setIsMobile] = useState(false);
-  
-//     useEffect(() => {
-//       if (window.innerWidth > 769) {
-//         setIsDesktop(true);
-//         setIsMobile(false);
-//       } else {
-//         setIsMobile(true);
-//         setIsDesktop(false);
-//       }
-//     }, []);
-
-//     return (
-//     <section id="portfolio">
-//     <Container>
-//     <Title title="Projects" />
-
-//     <div className="project-wrapper">
-
-//     <GridList cols={3}>
-//     <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-//     <GridListTile cols={1}>
-//         <img src={project1} alt="Project1" width="50%" height="50%" />
-//     </GridListTile>
-
-//     <GridListTile>
-//         <img src={project2} alt="Project2" />
-//     </GridListTile>
-
-//     <GridListTile>
-//         <img src={project3} alt="Project3" />
-//     </GridListTile>
-//     <div className="project-wrapper__text">
-//     <h3 className="project-wrapper__text-title">Babble Chat</h3>
-//     <p>
-//     The application is a real-time chat app with a minimal interface that allows bi-directional communication, as well as larger groups.
-//     </p>
-//     </div>
-//     <a
-//     target="_blank"
-//     rel="noopener noreferrer"
-//     className="cta-btn cta-btn--hero"
-//     href={"https://young-caverns-90463.herokuapp.com/"}
-//     >
-//     See Live
-//     </a>
-//     <a
-//     target="_blank"
-//     rel="noopener noreferrer"
-//     className="cta-btn text-color-main"
-//     href={"https://github.com/scrunchyblue/Project-2"}
-//     >
-//     Source Code
-//     </a>
-
-//     </Fade>
-//     </GridList>
-               
-
-          
-//         </div>
-//       </Container>
-//     </section>
-//     )
-// };
-
-// export default Portfolio;
