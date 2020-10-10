@@ -1,12 +1,10 @@
-import React from 'react';
-import { Row, Col } from "react-flexbox-grid";
+import React, { useState, useEffect } from 'react';
+import { Container, Grid } from '@material-ui/core';
 import Title from '../Title/Title';
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 
 import Masonry from "react-masonry-css";
 import ProjectBox from "./ui-components/projectBox/projectBox";
-
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 import project1 from "../../assets/project001.png";
 import project2 from "../../assets/project002.png";
@@ -18,6 +16,7 @@ import image13 from "../../assets/image13.png";
 import './projects.scss'
 
 class Portfolio extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -65,6 +64,9 @@ class Portfolio extends React.Component {
       filterMenuActive: false
     };
   };
+
+  
+
   componentDidMount() {
     this.filterGallery("all");
   }
@@ -109,15 +111,30 @@ class Portfolio extends React.Component {
       500: 1,
     };
 
+    // const [isDesktop, setIsDesktop] = useState(false);
+    // const [isMobile, setIsMobile] = useState(false);
+  
+    // useEffect(() => {
+    //   if (window.innerWidth > 769) {
+    //     setIsDesktop(true);
+    //     setIsMobile(false);
+    //   } else {
+    //     setIsMobile(true);
+    //     setIsDesktop(false);
+    //   }
+    // }, []);
+
 
     return (
       <div id="portfolio">
-        <div className="wrapper">
+        <Container style={{ marginBottom: "10%" }}>
           <Title title="Portfolio" />
+          <Fade bottom duration={1000} delay={600} distance="30px">
           <Masonry breakpointCols={portfolioBreakpoints} className="my-masonry-grid" columnClassName="mint__gallery">
             {projectsRender}
           </Masonry>
-        </div>
+          </Fade>
+        </Container>
       </div>
     );
   }
