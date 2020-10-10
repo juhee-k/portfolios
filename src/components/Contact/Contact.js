@@ -11,10 +11,12 @@ const Contact = () => {
       <Container>
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
+        <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               Would you like to work with me? Awesome!
             </p>
+        </div>
+        <div className="contact-wrapper__text">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -23,7 +25,7 @@ const Contact = () => {
             >
               Let's Talk
             </a>
-          </div>
+        </div>
         </Fade>
       </Container>
     </section>

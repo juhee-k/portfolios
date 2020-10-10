@@ -4,36 +4,20 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
-// import Footer from './Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 import { PortfolioProvider } from './context/context';
 
 
-function App() {
-  const [hero, setHero] = useState({});
-  // const [about, setAbout] = useState({});
-  // const [projects, setProjects] = useState([]);
-  // const [contact, setContact] = useState({});
-  // const [footer, setFooter] = useState({});
-
-  // useEffect(() => {
-  //   setHero({ ...heroData });
-  //   // setAbout({ ...aboutData });
-  //   // setProjects([...projectsData]);
-  //   // setContact({ ...contactData });
-  //   // setFooter({ ...footerData });
-  // }, []);
+const App = () => {
 
   return (
-    <PortfolioProvider value={{ hero }}>
+    <PortfolioProvider>
       <Hero />
       <About />
       <Projects />
       <Contact />
-
-      {/* 
-      
-      <Footer /> */}
+      <Footer />
      
     </PortfolioProvider>
   );
