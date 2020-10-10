@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './style/App.scss';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
-import Projects from './components/Projects/Projects';
+import Portfolio from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
@@ -15,7 +15,7 @@ const App = () => {
     <PortfolioProvider>
       <Hero />
       <About />
-      <Projects />
+      <Portfolio />
       <Contact />
       <Footer />
      
