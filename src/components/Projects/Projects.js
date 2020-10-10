@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Grid } from '@material-ui/core';
 import Title from '../Title/Title';
 import Fade from 'react-reveal/Fade';
@@ -26,7 +26,7 @@ class Portfolio extends React.Component {
           id: "1",
           preview: project1,
           title: "COWABUNGA",
-          tag: "surfing weather API",
+          url: "https://fudoggy.github.io/project1/",
         },
         {
           id: "2",
@@ -110,20 +110,6 @@ class Portfolio extends React.Component {
       700: 2,
       500: 1,
     };
-
-    // const [isDesktop, setIsDesktop] = useState(false);
-    // const [isMobile, setIsMobile] = useState(false);
-  
-    // useEffect(() => {
-    //   if (window.innerWidth > 769) {
-    //     setIsDesktop(true);
-    //     setIsMobile(false);
-    //   } else {
-    //     setIsMobile(true);
-    //     setIsDesktop(false);
-    //   }
-    // }, []);
-
 
     return (
       <div id="portfolio">

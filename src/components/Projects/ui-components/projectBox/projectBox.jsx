@@ -1,6 +1,7 @@
 import React from "react";
-// Scss
+import { Link } from 'react-scroll';
 import "./projectBox.scss";
+
 
 const projectBox = (props) => (
   <div className="portfolio__box">
@@ -9,6 +10,8 @@ const projectBox = (props) => (
       <div className="text-center">
         <p className="font30 weight800">{props.title}</p>
         <p className="font12 weight500">{props.tag}</p>
+        <a href={props.url} className="cta-btn cta-btn--resume">Live link</a>
+
       </div>
     </div>
   </div>
