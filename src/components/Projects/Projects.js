@@ -63,6 +63,27 @@ class Portfolio extends React.Component {
           title: "CDS Brochure",
           tag: "2015 Brochure",
           url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
+        },
+        {
+          id: "4",
+          preview: image4,
+          title: "CDS Website",
+          tag: "Wordpress",
+          url: "https://cdsus.com/",
+        },
+        {
+          id: "5",
+          preview: image13,
+          title: "Restaurant Web Sites Portfolio",
+          tag: "Online Ordering Integration",
+          url: "https://www.hellocds.com/",
+        },
+        {
+          id: "6",
+          preview: image10,
+          title: "CDS Brochure",
+          tag: "2015 Brochure",
+          url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
         }
       ],
       filterResult: null,
