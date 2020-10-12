@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Title from '../Title/Title';
-import { Container, Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import "./contact.scss";
 
 const Contact = () => {
