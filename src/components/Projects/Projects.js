@@ -62,10 +62,10 @@ class Portfolio extends React.Component {
         },
         {
           id: "6",
-          preview: image8,
-          title: "EMV Brochure",
-          tag: "2015 EMV Brochure",
-          url: "https://drive.google.com/file/d/1j9Bj7WJrbjFD2SreaDwNILYKXVPe1zXG/view?usp=sharing",
+          preview: image10,
+          title: "CDS Brochure",
+          tag: "2015 Brochure",
+          url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
         },
         {
           id: "7",
@@ -83,10 +83,10 @@ class Portfolio extends React.Component {
         },
         {
           id: "9",
-          preview: image10,
-          title: "CDS Brochure",
-          tag: "2015 Brochure",
-          url: "https://drive.google.com/file/d/1VQSLMGrQp8zL_3fymLpX2AP7dmJBMEJ6/view?usp=sharing",
+          preview: image8,
+          title: "EMV Brochure",
+          tag: "2015 EMV Brochure",
+          url: "https://drive.google.com/file/d/1j9Bj7WJrbjFD2SreaDwNILYKXVPe1zXG/view?usp=sharing",
         }
       ],
       filterResult: null,
