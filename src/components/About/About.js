@@ -29,7 +29,7 @@ const About = () => {
             <Grid xs={12} sm={6} style={{ height: "100%" }}>
               <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <img src={Profile} alt="Profile Picture" width="50%" height="50%" />
+                <img src={Profile} alt="Juhee" width="50%" height="50%" />
               </div>
               </Fade>
             </Grid>
