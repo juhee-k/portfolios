@@ -55,10 +55,10 @@ class Portfolio extends React.Component {
         },
         {
           id: "5",
-          preview: image,
-          title: "Seattle Prime Capital Website",
-          tag: "Duda",
-          url: "https://www.seattleprimecapital.com/",
+          preview: image3,
+          title: "Maple Hills Website",
+          tag: "Wix",
+          url: "https://www.maplehillsusa.com/",
         },
         {
           id: "6",
@@ -69,10 +69,10 @@ class Portfolio extends React.Component {
         },
         {
           id: "7",
-          preview: image3,
-          title: "Maple Hills Website",
-          tag: "Wix",
-          url: "https://www.maplehillsusa.com/",
+          preview: image,
+          title: "Seattle Prime Capital Website",
+          tag: "Duda",
+          url: "https://www.seattleprimecapital.com/",
         },
         {
           id: "8",
