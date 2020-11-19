@@ -29,24 +29,27 @@ class Portfolio extends React.Component {
           id: "1",
           preview: project1,
           title: "COWABUNGA",
-          tag: "https://github.com/juhee-k/project1",
-          project: "https://fudoggy.github.io/project1/",
+          tag: "Surf Weather API",
+          project: "https://github.com/juhee-k/project1",
+          live: "https://fudoggy.github.io/project1/",
           url: "https://fudoggy.github.io/project1/",
         },
         {
           id: "2",
           preview: project2,
           title: "Babble Chat",
-          tag: "https://github.com/juhee-k/Babble_GP2",
-          project: "https://young-caverns-90463.herokuapp.com/",
+          tag: "Real-time Chat App",
+          project: "https://github.com/juhee-k/Babble_GP2",
+          live: "https://young-caverns-90463.herokuapp.com/",
           url: "https://young-caverns-90463.herokuapp.com/",
         },
         {
           id: "3",
           preview: project3,
           title: "Music eXchange",
-          tag: "https://github.com/juhee-k/Muse-eXchange",
-          project: "https://arcane-everglades-49918.herokuapp.com/",
+          tag: "Music Exchange React",
+          project: "https://github.com/juhee-k/Muse-eXchange",
+          live: "https://arcane-everglades-49918.herokuapp.com/",
           url: "https://arcane-everglades-49918.herokuapp.com/",
         },
         {
@@ -133,7 +136,7 @@ class Portfolio extends React.Component {
     let projectsRender = null;
     if (this.state.filterResult) {
       projectsRender = this.state.filterResult.map((project) => (
-        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} project={project.project} url={project.url}/>
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} live={project.live} project={project.project} url={project.url}/>
       ));
     }
     // PORTFOLIO GALLERY BREAKPOINTS
