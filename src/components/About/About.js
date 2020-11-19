@@ -45,6 +45,9 @@ const About = () => {
                   <p className="about-wrapper__info-text">
                   I will always go one step further to ensure all necessary steps are followed accurately and tasks are completed on time with as few setbacks as possible.
                   </p>
+                  <p className="about-wrapper__info-text">
+                  If you want to know more about me, please email me at <a href={`mailto:${'juheekim26@icloud.com'}`}>juheekim26@icloud.com!</a>
+                  </p>
                     <br />
                     <span className="d-flex mt-3">
                       <a

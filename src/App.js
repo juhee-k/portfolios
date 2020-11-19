@@ -8,7 +8,6 @@ import Footer from './components/Footer/Footer';
 
 import { PortfolioProvider } from './context/context';
 
-//comment here asl;dkfj
 const App = () => {
 
   return (
