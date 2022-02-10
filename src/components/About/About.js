@@ -37,13 +37,23 @@ const About = () => {
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <div className="about-wrapper__info">
                   <p className="about-wrapper__info-text">
-                  I am a full stack software engineer with a background in Digital Media and Graphic Design.    
+                  I am contents creator with a background in Digital Media, Graphic Design, Video, and Full Stack Development.    
                   </p>
                   <p className="about-wrapper__info-text">
-                  I am proficient in Illustrator, Photoshop and Microsoft office Suite. I enjoy creating an organized environment and creating ways to increase efficiency and productivity in the workplace. 
+                  
+                    I re-organized the internal website for Apple Procurement team using CMS(Content Management Systems) and created a lot of graphics, presentation files or videos by using Adobe Creative Suites(Photoshop, Illustrator) and Apple Products such as Keynote, Page and Numbers. 
                   </p>
                   <p className="about-wrapper__info-text">
-                  I will always go one step further to ensure all necessary steps are followed accurately and tasks are completed on time with as few setbacks as possible.
+                  I’ve also learned about Adobe Captivate and since I have the knowledge and skill set of JavaScript, I was able to use my skill set and create the interactive courses for SGL(Self Guided Learning) and updated them to LMS(Learning Management Systems).
+                  </p>
+                    <p className="about-wrapper__info-text">
+                    I like learning new skills or programs and I also like creating. I’ve created more than 300 websites by using Wordpress, Dreamweaver, AEM and other CMS tools.
+                    </p>
+                <p className="about-wrapper__info-text">
+                    I also wanted to study more about full stack development and took the classes though UCLA Bootcamp. So, I have the knowledge and skills of HTML, CSS, JavaScript and so forth.
+                    </p>
+<p className="about-wrapper__info-text">
+                    I will always go one step further to ensure all necessary steps are followed accurately and tasks are completed on time with as few setbacks as possible.
                   </p>
                   <p className="about-wrapper__info-text">
                   If you want to know more about me, please email me at <a href={`mailto:${'juheekim26@icloud.com'}`}>juheekim26@icloud.com!</a>
