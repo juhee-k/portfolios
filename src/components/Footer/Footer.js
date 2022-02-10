@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <hr />
             <p className="footer__text">
-              © 2020 This portfolio is developed by <span />
+              © 2022 This portfolio is developed by <span />
               <a href="http://iamjuhee.com/" target="_blank" rel="noopener noreferrer">
                 Juhee Kim
               </a>
