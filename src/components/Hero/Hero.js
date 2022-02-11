@@ -28,8 +28,9 @@ const Header = () => {
               <span className="text-color-main">Juhee Kim</span>
               .
               <br />
-              I am Full Stack Software Engineer!
+              
             </h1>
+            <h2>I am contents creator with a background in Digital Media, Graphic Design, and Full Stack Development!</h2>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p className="hero-cta">
