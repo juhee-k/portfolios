@@ -26,7 +26,7 @@
     "serve": "^13.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,5 +45,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "I am contents creator with a background in Digital Media, Graphic Design, Video, and Full Stack Development! I’ve created more than 300 websites by using Wordpress, Dreamweaver, AEM and other CMS tools. I also wanted to study more about full stack development and took the classes though UCLA Bootcamp. So, I have the knowledge and skills of HTML, CSS, JavaScript and so forth. I enjoy creating an organized environment and creating ways to increase efficiency and productivity in the workplace.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhee-k/portfolios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juhee-k/portfolios/issues"
+  },
+  "homepage": "https://github.com/juhee-k/portfolios#readme"
 }
